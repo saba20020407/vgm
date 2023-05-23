@@ -27,20 +27,34 @@
       cursor: pointer;
       font-size: 1.2rem;
       transition: background-color 0.3s ease;
+      margin-bottom: 1rem;
     }
 
     #tweetButton:hover {
       background-color: #0c83d6;
     }
+
+    #description {
+      width: 80%;
+      max-width: 500px;
+      padding: 1rem;
+      background-color: #FFFFFF;
+      border: 1px solid #CED4DA;
+      border-radius: 5px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <h1>VGM copy</h1>
-  <button id="tweetButton">ツイート作成</button>
+  <button id="tweetButton">VGMツイートをする</button>
+  <div id="description">
+    <p>VGMツイートのコピペの雛形です。@ogiso0407 #YEN買取所を付けてツイートすると少し余分にtipされるかも！？ </p>
+  </div>
 
   <script>
     document.getElementById('tweetButton').addEventListener('click', function() {
-      var tweetText = "ここにツイートのテキストを入力してください";
+      var tweetText = "@vgm_potato vgm #verylonganimals @ogiso0407 #YEN買取所";
       var tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText);
       window.open(tweetUrl);
     });

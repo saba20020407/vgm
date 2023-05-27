@@ -49,12 +49,12 @@
   <h1>VGM copy</h1>
   <button id="tweetButton">VGMツイートをする</button>
   <div id="description">
-    <p>VGMツイートのコピペの雛形です。@ogiso0407 #YEN買取所を付けてツイートすると少し余分にtipされるかも！？ </p>
+    <p>You can easily tweet VGM with this button! You might even get more points than usual if you tweet from this button! </p>
   </div>
 
   <script>
     document.getElementById('tweetButton').addEventListener('click', function() {
-      var tweetText = "@vgm_potato vgm #verylonganimals @ogiso0407 #YEN買取所";
+      var tweetText = "@vgm_potato vgm #verylonganimals @KiraKirari_IDOL #毎日きらり";
       var tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText);
       window.open(tweetUrl);
     });
